@@ -1,0 +1,83 @@
+.container-orangered, .container-yellowgreen, .container-blue, .container-grey{
+    text-align: center;
+}
+.orange-item{
+    border: solid 2px black;
+    height: 50px;
+    background-color: orangered;
+    margin: 5px;
+}
+.container-yellowgreen{
+    background-color: yellowgreen;
+    height: 150px;
+    border: solid 2px black;
+
+}
+.blue-item{
+    background-color: blue;
+    height: 145px;
+    border: solid 2px black;
+    margin: 5px;
+}
+.grey-item{
+    background-color: gray;
+    height: 150px;
+    border: solid 2px black;
+}
+@media (width < 320px){
+    body{
+    background-color: red;
+    }
+.container-yellowgreen{
+        height: 95px;
+}
+.blue-item{
+        width: 95%;
+}
+.container-grey{
+        position: relative;
+}
+.grey-item{
+        position: absolute;
+        width: 100%;
+        height: 75px;
+    }
+}
+@media (320px <= width < 768px) {
+    body{
+    background-color: orange;
+    }
+
+.container-grey{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 5px;
+    }
+.grey-item{
+    margin: 5px;
+    height: 50px;
+}
+}
+    
+@media(width >= 768px){
+    body{
+    background-color: rgb(205, 200, 50)
+    }
+.orange-item{
+    display: inline-block;
+    width: 47%;
+    }
+.container-blue{
+    display: inline-flex;
+    }
+.blue-item{
+    width: 245px;
+    }
+.container-grey{
+    display: flex;
+    }
+.grey-item{
+    width: 50%;
+    margin: 5px;
+    }
+}
